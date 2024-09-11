@@ -91,3 +91,12 @@ h1{
   margin-bottom: 10px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+#logo{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.nav-btn.active{
+  background-color: hsl(2, 50%, 89%);
+  color: hsl(0, 68%, 16%);
+}

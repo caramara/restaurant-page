@@ -5,9 +5,8 @@ import about from "./pages/about/about.js";
 const pageLoad = () => {
     const container = document.querySelector('#content');
     const navBar = document.querySelector('nav');
-    const navButtons = document.querySelectorAll('.nav-btn');
     container.appendChild(home);
-
+    toggleActive();
     navBar.addEventListener('click', (button)=>{
         const target = button.target;
         switch(target.textContent.toLowerCase()){
@@ -26,5 +25,15 @@ const pageLoad = () => {
         }
     });
 };
-
+const toggleActive = () => {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    navButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            navButtons.forEach((button) => {
+                button.classList.remove('active');
+            });
+            button.classList.add('active');
+        });
+    });
+};
 export default pageLoad;
