@@ -130,5 +130,4 @@ dist
 .pnp.*
 
 # Distribution directory
-dist/
 src/fonts/
